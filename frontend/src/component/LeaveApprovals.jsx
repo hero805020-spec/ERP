@@ -1,5 +1,6 @@
 // LeaveApprovalPage.js
 import React, { useEffect, useState } from "react";
+import { API_ENDPOINTS } from "../utils/apiConfig";
 
 const LeaveApprovalPage = () => {
   const [leaves, setLeaves] = useState([]);
