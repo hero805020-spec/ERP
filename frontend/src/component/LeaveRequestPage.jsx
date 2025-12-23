@@ -1,5 +1,6 @@
 // LeaveRequestPage.js
 import React, { useState, useEffect } from "react";
+import { API_ENDPOINTS } from "../utils/apiConfig";
 
 const LeaveRequestPage = () => {
   const [form, setForm] = useState({
