@@ -23,7 +23,6 @@ services:
     runtime: node
     plan: free
     buildCommand: cd frontend && npm install && npm run build
-    startCommand: cd frontend && npx serve -s dist -l 3000 --single
-    envVars:
+    startCommand: npx serve -s frontend/dist -l 3000 --single    envVars:
       - key: VITE_API_URL
         value: https://erp-backend.onrender.com/api
