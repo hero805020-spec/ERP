@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { formatDateISOToDDMMYYYY } from '../utils/dateFormat';
+import { API_ENDPOINTS } from "../utils/apiConfig";
 
 const parseQuotation = (message = '') => {
   const result = { service: '', company: '', budget: '', deadline: '', details: '' };
