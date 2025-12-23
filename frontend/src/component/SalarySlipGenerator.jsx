@@ -1,6 +1,7 @@
 // SalarySlipGenerator.js
 import React, { useState, useEffect } from 'react';
 import './SalarySlip.css';
+import { API_ENDPOINTS } from "../utils/apiConfig";
 
 const SalarySlipGenerator = () => {
   const [form, setForm] = useState({
