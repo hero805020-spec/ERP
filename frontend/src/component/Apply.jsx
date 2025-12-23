@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Admin.css";
+import { API_ENDPOINTS } from "../utils/apiConfig";
 
 const Apply = () => {
   const navigate = useNavigate();
