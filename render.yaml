@@ -17,15 +17,13 @@ services:
         sync: false
       - key: DEFAULT_ADMIN_PWD
         sync: false
-
   # Frontend service
-  - type: static-site
+  - type: web
     name: erp-frontend
-    buildCommand: cd frontend && npm install && npm run build
-    staticPublishPath: frontend/dist
+    runtime: node
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build && npm install -g serve
+    startCommand: cd frontend && serve -s dist -l 3000
     envVars:
       - key: VITE_API_URL
         value: https://erp-backend.onrender.com/api
-    routes:
-      - path: /*
-        destination: /index.html
