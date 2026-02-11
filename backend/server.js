@@ -31,8 +31,10 @@ const allowedOrigins = process.env.CORS_ORIGIN
 const cors = require("cors");
 
 app.use(cors({
-  origin: "*"
+  origin: "*",
+  credentials: true
 }));
+
 
 app.use(cors({
   origin: function(origin, callback) {
