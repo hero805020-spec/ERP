@@ -41,7 +41,7 @@ const PageWrapper = ({ children }) => {
   const wrapperRef = React.useRef(null);
 
   useEffect(() => {
-  fetch("https://your-backend.onrender.com/test")
+  fetch("https://erp-backend-lk44.onrender.com/test")
     .then(res => res.json())
     .then(data => console.log("Backend Response:", data))
     .catch(err => console.log("Error:", err));
