@@ -28,6 +28,12 @@ const allowedOrigins = process.env.CORS_ORIGIN
   ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
   : ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5000']
 
+const cors = require("cors");
+
+app.use(cors({
+  origin: "*"
+}));
+
 app.use(cors({
   origin: function(origin, callback) {
     // Allow requests with no origin (like mobile apps or curl requests)
