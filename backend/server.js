@@ -1,3 +1,11 @@
+app.get("/", (req, res) => {
+  res.send("Backend is working 🚀");
+});
+
+app.get("/test", (req, res) => {
+  res.json({ message: "Backend connected successfully" });
+});
+
 import express from 'express'
 import cors from 'cors'
 import path from 'path'
