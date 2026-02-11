@@ -49,7 +49,7 @@ const __dirname = path.dirname(__filename)
 // Serve uploads folder if present
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 10000
 const JWT_SECRET = process.env.JWT_SECRET || 'devsecret'
 const DEFAULT_ADMIN_PWD = process.env.DEFAULT_ADMIN_PWD || 'admin123'
 
