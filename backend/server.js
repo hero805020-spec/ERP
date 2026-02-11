@@ -1,10 +1,3 @@
-app.get("/", (req, res) => {
-  res.send("Backend is working 🚀");
-});
-
-app.get("/test", (req, res) => {
-  res.json({ message: "Backend connected successfully" });
-});
 
 import express from 'express'
 import cors from 'cors'
@@ -93,7 +86,11 @@ const sampleSalarySlips = []
 
 app.get('/', (req, res) => {
   res.send('Backend server running')
-})
+});
+
+app.get("/test", (req, res) => {
+  res.json({ message: "Backend connected successfully" });
+});
 
 // ensure uploads directory exists
 const uploadsDir = path.join(__dirname, 'uploads')
