@@ -22,7 +22,8 @@ import PDFDocument from 'pdfkit'
 dotenv.config()
 
 const app = express()
-const cors = require("cors");
+// const cors = require("cors");
+
 // CORS configuration for Render deployment
 const allowedOrigins = process.env.CORS_ORIGIN 
   ? process.env.CORS_ORIGIN.split(',').map(o => o.trim())
